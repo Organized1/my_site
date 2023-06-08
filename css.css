@@ -1,0 +1,149 @@
+/* Set the font family and size for all text */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Set the background color and padding for the header */
+  header {
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #000000;
+    padding: 10px;
+    width: 100%;
+  }
+  h1{
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+  }
+  /* Style the site logo */
+  .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style the navigation links */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  /* Define the animation */
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply the animation to an element */
+  .slide-in {
+    animation: slide-in 0.5s ease-out;
+  }
+  nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .txt {
+    color: #fff;
+  }
+  nav a:hover {
+    background-color: #5ba6c6;
+    text-decoration: none;
+  }
+  
+  /* Style the main content area */
+  main {
+    padding: 180px;
+    background-image: url(img/background.jpg);
+    height: 150vH;
+    display: inline;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .job{
+    color: #000000;
+    padding-top:10px ;
+  }
+.job:hover{
+    text-decoration: none;
+    color: rgb(242, 255, 0);
+
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    /* Stack navigation links on small screens */
+    nav li {
+      float: none;
+    }
+    main  {
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 250px;
+        height: 200vh;
+        width: 100%;
+    }
+    nav a {
+      display: inline-block;
+      padding: 8px;
+    }
+    .txt{
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    /* Increase font size for smaller screens */
+    body {
+      font-size: 14px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+
+  }
